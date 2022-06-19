@@ -13,6 +13,9 @@ Run it:
 ```bash
 docker run --name vulnerable-app --rm -p 8080:8080 ghcr.io/christophetd/log4shell-vulnerable-app
 ```
+(if memory error report from docker, try :
+docker run ...... --ulimit nofile=122880:122880 ....... 
+
 
 Build it yourself (you don't need any Java-related tooling):
 
